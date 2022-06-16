@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -17,15 +17,15 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-    
-    
+
+
   }
 
   ngDoCheck() {
-    this.user_role = sessionStorage.getItem("role");
+    this.user_role = sessionStorage.getItem('role');
     // console.log(this.user_role);
-    
-    const user_session_id = sessionStorage.getItem("user_session_id")
+
+    const user_session_id = sessionStorage.getItem('user_session_id');
     if (user_session_id) {
       this.logged_in = true;
     }
@@ -33,18 +33,18 @@ export class HeaderComponent implements OnInit {
 
   switchLanguage(language: string) {
     this.translate.use(language);
-    if (language == 'en') {
-      this.language = "English";
-    } else if (language == 'hn') {
-      this.language = "हिंदी(Hindi)";
+    if (language === 'en') {
+      this.language = 'English';
+    } else if (language === 'hn') {
+      this.language = 'हिंदी(Hindi)';
     }
   }
 
   logOut() {
-    sessionStorage.removeItem("user_session_id");
-    sessionStorage.removeItem("role");
+    sessionStorage.removeItem('user_session_id');
+    sessionStorage.removeItem('role');
     this.router.navigateByUrl('/sign-in');
-    location.reload()
+    location.reload();
   }
 
 }

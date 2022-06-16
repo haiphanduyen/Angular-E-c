@@ -1,12 +1,12 @@
 {
     "intro": "Welcome to the world of Internationalization",
-    "proj_name": "B2B Ecommerce Portal",
-    "project_short_desc": "This project is like ecommerce portal where some of the user(Seller) who want to sell the product and services using this and some of the user(Buyer/End User) who needs the product they can buy from the user(Seller). On top of this two user there is another user(Admin) we named as admin, who have control all the operation like, he/she can delete the product, buyer, seller, can edit and update also. ",
+    "proj_name": "Shop",
+    "slogan": "Luxury, For the Men Who Deserves It",
     "view_detail_doc_btn": "View Detailed Documentation",
     "header": {
-        "ecommerce": "Ecommerce 2.0",
-        "lang_en": "English(अंग्रेज़ी)",
-        "lang_hn": "Hindi(हिंदी)",
+        "ecommerce": "Shop",
+        "lang_en": "English",
+        "lang_hn": "Vietnamese",
         "home": "Home",
         "service": "Service",
         "about_us": "About US",

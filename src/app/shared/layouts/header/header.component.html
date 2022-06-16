@@ -28,8 +28,8 @@
                     {{'header.about_us' | translate}}
                 </a>
             </li>
-            
-            <li class="nav-item" *ngIf="user_role == 'buyer'">
+
+            <li class="nav-item" *ngIf="user_role !== 'buyer'">
                     <a class="nav-link" routerLink="/my-order">{{'header.order' | translate}}</a>
             </li>
             <li class="nav-item" *ngIf="user_role == 'admin'">
@@ -69,4 +69,7 @@
             </li>
         </ul>
     </div>
+
+
+
 </nav>
